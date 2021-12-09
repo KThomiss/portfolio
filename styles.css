@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-image: url(images/pexels-mnm-zameer-3308588.jpg);
+  /*background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;*/
+}
+
+nav {
+  background-color: black;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  color: #fff;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h1,
+h4 {
+  margin-top: 0;
+  padding: 50px;
+}
+
+h5 {
+  padding: 10px;
+  background-color: white;
+  color: black;
+}
+
+.section-intro,
+.section1,
+.section2,
+.section3 {
+  height: 100vh;
+  text-align: center;
+  color: #fff;
+}
+
+.section-intro {
+  background-color: purple;
+}
+
+.section1 {
+  background-color: red;
+}
+
+.section2 {
+  background-color: green;
+}
+
+.section3 {
+  background-color: blue;
+}
+
+.grid-container {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  background-color: aquamarine;
+}
+
+h5 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.changes {
+  position: relative;
+  display: inline-block;
+  /*width: 250px;*/
+}
+
+.reveal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  color: black;
+  opacity: 0;
+  transition: opacity 4s ease;
+  animation: 2s ease forwards reveal;
+}
+
+@keyframes reveal {
+  to {
+    top: 75px;
+    opacity: 1;
+  }
+}
