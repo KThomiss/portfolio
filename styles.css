@@ -5,8 +5,6 @@ body {
 }
 
 h1,
-h2,
-h3,
 h4,
 h5 {
   font-family: "Titillium Web", sans-serif;
@@ -22,6 +20,7 @@ h2,
 h3 {
   font-size: 2rem;
   width: 50%;
+  margin: 5rem auto 0.5rem auto;
 }
 
 h4,
@@ -33,28 +32,28 @@ h5 {
   margin-top: 1.2rem;
 }
 
+p {
+  padding: 10px;
+}
+
 html {
   scroll-behavior: smooth;
-  /*background-image: url(images/pexels-mnm-zameer-3308588.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;*/
   box-shadow: 0px 4px 11px 4px rgba(0, 0, 0, 0.75);
   width: 80%;
   margin: 0 auto 100px auto;
 }
 
 span {
-  background-color: #db3300;
-  border-radius: 1rem;
-  padding: 10px;
+  border-bottom: 5px solid #db3300;
+  border-right: 5px solid #db3300;
+  padding-right: 20px;
 }
 
 nav {
   background-color: #2f828a;
 }
 
-nav ul {
+.header-menu {
   display: flex;
   justify-content: center;
   margin: 0;
@@ -67,11 +66,42 @@ nav ul li {
   padding: 20px;
 }
 
+li:hover,
+.cta:hover,
+.hamburger-btn:hover {
+  background-color: #db3300;
+}
+
 a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  color: #fff;
+  color: black;
+}
+
+/* hamburger menu */
+
+.hamburger-menu {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.hamburger-menu.show {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.hamburger-btn {
+  display: none;
+  background-color: inherit;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .cta {
@@ -81,45 +111,40 @@ a {
   border-radius: 1rem;
   display: block;
   width: 20%;
-  margin: 5rem auto;
+  margin: 0 auto;
 }
 
 .section-intro,
 .section1,
 .section2,
 .section3 {
-  height: 100vh;
+  height: 100%;
   text-align: center;
-  color: #fff;
+  padding: 10rem 0;
 }
 
 .section-intro {
-  padding: 15rem 0;
   background-color: #399aa3;
 }
 
 .section1 {
-  padding: 15rem 0;
   background-color: #42b2bd;
 }
 
 .section2 {
-  padding: 15rem 0;
   background-color: #4bcbd6;
 }
 
 .section3 {
-  padding: 15rem 0;
   background-color: #55e3f1;
 }
 
 .container {
   width: 90%;
-  height: 90%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #change1,
@@ -128,29 +153,30 @@ a {
 #change4,
 #change5 {
   border-radius: 1rem;
-  height: 50%;
-  flex: 1;
+  width: 300px;
+  height: 400px;
   margin: 10px;
 }
 
 #change1 {
-  background-color: #f21651;
+  background-color: #067a53;
 }
 
 #change2 {
-  background-color: #021744;
+  background-color: #01a164;
 }
 
 #change3 {
-  background-color: #06dbbd;
+  background-color: #87eaab;
 }
 
 #change4 {
-  background-color: #f2cd13;
+  background-color: #3fc284;
 }
 
 #change5 {
-  background-color: #4c0213;
+  background-color: #104f33;
+  color: #fff;
 }
 
 .changes {
@@ -186,4 +212,50 @@ a {
 footer {
   height: 20rem;
   background-color: #7df3fd;
+}
+
+@media (max-width: 1100px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 850px) {
+  .hamburger-menu.show {
+    display: none;
+  }
+}
+
+@media (max-width: 850px) {
+  .header-menu li {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: block;
+    margin: 15px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 2rem;
+    width: 90%;
+  }
+
+  h2,
+  h3 {
+    font-size: 1.5rem;
+    width: 80%;
+  }
 }

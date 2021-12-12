@@ -5,30 +5,40 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/ff4dde0530.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Roboto+Slab:wght@100&family=Roboto:wght@500&family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
     </head>
     <body>
         <header>
             <nav>
-                <ul>
+                <ul class="header-menu">
                     <li><a href="#intro">Home</a></li>
                     <li><a href="#one">Cross-course</a></li>
-                    <li><a href="#two">Project1</a></li>
-                    <li><a href="#three">Exam</a></li>
+                    <li><a href="#two">Semester Project</a></li>
+                    <li><a href="#three">Project Exam</a></li>
+                    <button class="hamburger-btn"><i class="fas fa-bars"></i></button>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="hamburger-menu">
+                    <li><a href="#intro">Home</a></li>
+                    <li><a href="#one">Cross-course</a></li>
+                    <li><a href="#two">Semester Project</a></li>
+                    <li><a href="#three">Project Exam</a></li>
                 </ul>
             </nav>
         </header>
         <main>
             <section class="section-intro" id="intro">
-                <h1><span>Port</span>folio by Kristian Thomassen</h1>
-                <!--<h1>Portfolio by Kristian Thomassen</h1>-->
+                <h1><span>Portfolio</span> Kristian Thomassen</h1>
                 <h2>I have worked on three projects over the past year at Noroff.</h2>
                 <h3>Click one of the links to check them out!</h3>
             </section>
             <section class="section1" id="one">
                 <div>
-                    <h4>Hover the boxes to see changes or click the button below to go to website</h4>
+                    <h4>Click the button to visit the website</h4>
+                    <p>Hover or click on the boxes to see changes made</p>
                     <a href="https://www.projectrainydays.com/index.html" class="cta">Cross-Course project</a>
                 </div>
                 <div class="container">
@@ -86,18 +96,16 @@
             </section>
             <section class="section2" id="two">
                 <div>
-                    <h4>Click link the link to go to website</h4>
-                    <a href="https://www.kthomassen-project1.com/index.html">Project1</a>
+                    <h4>Click the button to visit the website</h4>
+                    <p>Hover or click on the boxes to see changes made</p>
+                    <a href="https://www.kthomassen-project1.com/index.html" class="cta">Semester Project</a>
                 </div>
                 <div class="container">
                     <div class="changes" id="change1">
                         <h5>Change 1</h5>
                         <div class="reveal">
-                            <p>lorem ipsum</p>
-                            <p>lorem ipsum</p>
-                            <p>lorem ipsum</p>
-                            <p>lorem ipsum</p>
-                            <p>lorem ipsum</p>
+                            <p>I did not have any cta-buttons just plain text with hover effects</p>
+                            <p>Now the users can better tell what they can interact with</p>
                         </div>
                     </div>
                     <div class="changes" id="change2">
@@ -133,19 +141,16 @@
                     <div class="changes" id="change5">
                         <h5>Change 5</h5>
                         <div class="reveal">
-                            <p>lorem ipsum</p>
-                            <p>lorem ipsum</p>
-                            <p>lorem ipsum</p>
-                            <p>lorem ipsum</p>
-                            <p>lorem ipsum</p>
+                            <div>Fun fact! I went from 1050 CSS code lines to under 800 and everything stayed the same.</div>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="section3" id="three">
                 <div>
-                    <h4>Click the link to go to website</h4>
-                    <a href="https://www.ktexam.com/index.html">KTBlog.</a>
+                    <h4>Click the button to visit the website</h4>
+                    <p>Hover or click on the boxes to see changes made</p>
+                    <a href="https://www.ktexam.com/index.html" class="cta">Project Exam</a>
                 </div>
                 <div class="container">
                     <div class="changes" id="change1">
