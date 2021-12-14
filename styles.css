@@ -20,7 +20,7 @@ h2,
 h3 {
   font-size: 2rem;
   width: 50%;
-  margin: 5rem auto 0.5rem auto;
+  margin: 5rem auto 2rem auto;
 }
 
 h4,
@@ -34,6 +34,7 @@ h5 {
 
 p {
   padding: 10px;
+  font-size: 0.9rem;
 }
 
 html {
@@ -67,7 +68,6 @@ nav ul li {
 }
 
 li:hover,
-.cta:hover,
 .hamburger-btn:hover {
   background-color: #db3300;
 }
@@ -104,14 +104,31 @@ a {
   cursor: pointer;
 }
 
-.cta {
+.go-to-website {
   padding: 2rem;
+}
+
+.cta {
   background-color: whitesmoke;
   color: black;
   border-radius: 1rem;
   display: block;
-  width: 20%;
-  margin: 0 auto;
+  padding: 1.5rem;
+  max-width: 200px;
+  margin: 2rem auto;
+}
+
+.cta:hover {
+  background-color: tomato;
+  transform: translateY(-8px);
+  box-shadow: 0px 25px 21px -3px rgba(255, 90, 0, 0.71);
+  animation: translateY ease 1s;
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0);
+  }
 }
 
 .section-intro,
@@ -125,6 +142,15 @@ a {
 
 .section-intro {
   background-color: #399aa3;
+  height: 100vh;
+}
+
+.intro {
+  font-size: 2rem;
+  font-weight: bolder;
+  width: 60%;
+  margin: 1rem auto;
+  color: whitesmoke;
 }
 
 .section1 {
@@ -204,7 +230,6 @@ a {
 
 @keyframes reveal {
   to {
-    /*top: 50px;*/
     opacity: 1;
   }
 }
