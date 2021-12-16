@@ -67,8 +67,7 @@ nav ul li {
   padding: 20px;
 }
 
-li:hover,
-.hamburger-btn:hover {
+li:hover {
   background-color: #db3300;
 }
 
@@ -104,6 +103,10 @@ a {
   cursor: pointer;
 }
 
+.hamburger-btn:hover {
+  color: #fff;
+}
+
 .go-to-website {
   padding: 2rem;
 }
@@ -131,18 +134,13 @@ a {
   }
 }
 
-.section-intro,
-.section1,
-.section2,
-.section3 {
-  height: 100%;
-  text-align: center;
-  padding: 10rem 0;
-}
-
 .section-intro {
   background-color: #399aa3;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .intro {
@@ -151,6 +149,14 @@ a {
   width: 60%;
   margin: 1rem auto;
   color: whitesmoke;
+}
+
+.section1,
+.section2,
+.section3 {
+  height: 100%;
+  text-align: center;
+  padding: 10rem 0;
 }
 
 .section1 {
@@ -279,7 +285,8 @@ footer {
   }
 
   h2,
-  h3 {
+  h3,
+  .intro {
     font-size: 1.5rem;
     width: 80%;
   }
