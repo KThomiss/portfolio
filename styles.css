@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Roboto Slab", serif;
@@ -207,8 +211,7 @@ a {
 }
 
 #change5 {
-  background-color: #104f33;
-  color: #fff;
+  background-color: #196d47;
 }
 
 .changes {
@@ -241,8 +244,31 @@ a {
 }
 
 footer {
-  height: 20rem;
   background-color: #7df3fd;
+  font-size: 1rem;
+}
+
+.footer-intro {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding: 10px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.toTop,
+.arrowToTop {
+  display: block;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.toTop:hover {
+  color: #db3300;
+}
+
+.arrowToTop {
+  display: none;
 }
 
 @media (max-width: 1100px) {
