@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -125,7 +127,6 @@ a {
 }
 
 .cta {
-  /*background-color: #db3300;*/
   background: linear-gradient(
     0deg,
     rgba(0, 219, 191, 1) 0%,
@@ -201,7 +202,8 @@ a {
 #change2,
 #change3,
 #change4,
-#change5 {
+#change5,
+#change6 {
   border-radius: 1rem;
   width: 300px;
   height: 400px;
@@ -226,6 +228,10 @@ a {
 
 #change5 {
   background-color: #196d47;
+}
+
+#change6 {
+  background-color: #317055;
 }
 
 .changes {
